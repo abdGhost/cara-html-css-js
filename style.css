@@ -558,6 +558,116 @@ footer .copyright {
 
 /* Footer End */
 
+/********************** Start of Shop Page **********************/
+
+/* Page Header Start */
+#page-header {
+  background-image: url("img/banner/b1.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+/* Page Header End */
+
+/* Pagination Start */
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* Pagination End */
+
+/* Product Details Start */
+#product-details .single-product-image {
+  width: 40%;
+  margin-right: 40px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+/* Product Details End */
+
+/* Single Product Start */
+#product-details {
+  display: flex;
+  margin-top: 20px;
+}
+
+#product-details .single-product-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#product-details .single-product-details h4 {
+  padding: 30px 0 10px 0;
+}
+
+#product-details .single-product-details h2 {
+  font-size: 26px;
+}
+
+#product-details .single-product-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#product-details .single-product-details select:focus {
+  outline: none;
+}
+
+#product-details .single-product-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#product-details .single-product-details input:focus {
+  outline: none;
+}
+
+#product-details .single-product-details button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#product-details .single-product-details span {
+  line-height: 25px;
+}
+
+/* Single Product End */
+
+/********************** End of Shop Page **********************/
+
 /*Media Query Start 799px */
 @media (max-width: 799px) {
   .section-p1 {
@@ -721,5 +831,22 @@ footer .copyright {
   footer .copyright {
     text-align: start;
   }
+
+  /* Single Product Start */
+  #product-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #product-details .single-product-image {
+    width: 100%;
+  }
+
+  #product-details .single-product-details {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  /* Single Product End */
 }
 /* Media Query 477px End */
