@@ -737,6 +737,67 @@ footer .copyright {
 
 /* Blog End */
 
+/* About Start */
+#page-header.about-header{
+background-image: url("img/about/banner.png");
+}
+
+#about-head{
+  display: flex;
+  align-items: center;
+}
+
+#about-head img{
+  width: 50%;
+  height: auto;
+}
+
+#about-head div{
+  width: 50%;
+  padding-left: 40px;
+}
+
+#about-app{
+  text-align: center;
+}
+
+#about-app .video{
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
+.scrolling-text-container {
+  width: 100%;
+  background-color: #ccc;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+/* About End */
+
+
 /********************** End of Shop Page **********************/
 
 /*Media Query Start 799px */
@@ -941,5 +1002,23 @@ footer .copyright {
     width: 100%;
   }
   /* Blog Page End */
+
+  /* About Page Start */
+  #about-head {
+    flex-direction: column;
+  }
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #about-head div {
+    width: 100%;
+}
+#about-app .video {
+  width: 100%;
+ 
+}
+  /* About Page End */
+
 }
 /* Media Query 477px End */
